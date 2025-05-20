@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akanksha Verma - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body class="bg-gradient-to-br from-pink-200 to-blue-100 font-sans text-gray-900 transition-colors duration-300" id="body">
+  <header class="bg-indigo-900 text-white text-center py-8 relative">
+    <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
+    <nav>
+      <ul class="flex justify-center flex-wrap gap-6 mt-4">
+        <li><a href="#about" class="hover:bg-indigo-700 px-4 py-2 rounded-full">About Me</a></li>
+        <li><a href="#achievements" class="hover:bg-indigo-700 px-4 py-2 rounded-full">Achievements</a></li>
+        <li><a href="#goals" class="hover:bg-indigo-700 px-4 py-2 rounded-full">Goals</a></li>
+        <li><a href="#personal" class="hover:bg-indigo-700 px-4 py-2 rounded-full">Personal Side</a></li>
+        <li><a href="#contact" class="hover:bg-indigo-700 px-4 py-2 rounded-full">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Dark/Light Mode toggle button at top-right -->
+    <button
+      onclick="toggleMode()"
+      class="absolute top-4 right-4 px-3 py-1 text-sm bg-white text-indigo-900 rounded-full hover:bg-gray-100"
+      aria-label="Toggle Dark/Light Mode"
+    >
+      Toggle Mode
+    </button>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-6 space-y-10">
+    <section id="welcome" class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-indigo-900 mb-4">Hello, I'm Akanksha</h2>
+      <img src="profile.jpg" alt="Akanksha Verma" class="profile-photo w-40 h-40 rounded-full mx-auto shadow-md" />
+      <div class="flex justify-center">
+        <video controls class="mt-4 rounded-lg shadow w-64 h-auto mx-auto">
+  <source src="introduction.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+      </div>
+    </section>
+
+    <section id="about" class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-indigo-900 mb-4">About Me</h2>
+      <p><strong>Name:</strong> Akanksha Verma</p>
+      <p><strong>Location:</strong> Palghar</p>
+      <p><strong>Education:</strong> BTech in Electronic and Computer Science</p>
+      <p><strong>Languages:</strong> English, Hindi</p>
+    </section>
+
+    <section id="achievements" class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-indigo-900 mb-4">Achievements</h2>
+      <ul id="achievement-list" class="list-disc ml-6 text-gray-700">
+        <li>Computer Networking</li>
+        <li>AI and Cyber Security</li>
+        <li>VLSI and semiconductors</li>
+      </ul>
+    </section>
+
+    <section id="goals" class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-indigo-900 mb-4">Future Goals</h2>
+      <ul class="list-decimal ml-6 space-y-2 text-gray-700">
+        <li>Become proficient in HTML, CSS, and JavaScript.</li>
+        <li>Learn modern frameworks like React, Vue, or Svelte.</li>
+        <li>Understand responsive design and accessibility.</li>
+        <li>Learn backend languages and frameworks like Node.js, Express, Django, or Laravel.</li>
+        <li>Gain hands-on experience with SQL and NoSQL.</li>
+      </ul>
+    </section>
+    <section id="projects" class="bg-white p-6 rounded-xl shadow-lg">
+  <h2 class="text-2xl font-semibold text-indigo-900 mb-4">Project</h2>
+  <div class="space-y-4">
+    <div>
+      <h3 class="text-xl font-semibold text-indigo-700">Mini Land Rover Project</h3>
+      <p>
+        This is a 4-wheel drive land rover robot designed for rough terrain navigation. It is built using an ESP32 microcontroller for wireless control and a BTS7960 motordriver for efficient motor control. The rover features a rocker-bogie suspension mechanism,allowing it to easily climb over obstacles while maintaining stability. It is powered by DC gear motors and controlled through various sensors and modules connected via jumper wires. This project demonstrates a practical application of embedded systems and robotics for exploration and mobility in uneven environments.
+      </p>
+    </div>
+  </div>
+</section>
+<section id="certifications" class="bg-white p-6 rounded-xl shadow-lg">
+  <h2 class="text-2xl font-semibold text-indigo-900 mb-4">Certifications</h2>
+  <ul class="list-disc ml-6 text-gray-700 space-y-2">
+    <li>Computer Networking – Cisco Packet tracer</li>
+    <li>Foundations of Artificial Intelligence – IBM SkillsBuild</li>
+    <li>Innovative Trends In VLSI and semiconductor Engineering</li>
+    <li>Eureka Pitch Competition </li>
+  </ul>
+</section>
+
+    <section id="personal" class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-indigo-900 mb-4">Personal Side</h2>
+      <p><strong>Hobbies:</strong> Coding, Gardening, Cooking</p>
+      <p><strong>Favorite Role Model:</strong> Vicky Kaushal</p>
+      <p><strong>Favorite Book:</strong> Big Magic</p>
+      <p><strong>Volunteering Experience:</strong> Land Rover, Cisco Packet Tracer</p>
+    </section>
+
+    <section id="contact" class="bg-white p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-indigo-900 mb-4">Contact Me</h2>
+      <ul class="space-y-2">
+        <li><a href="tel:+917999279872" class="text-blue-600 underline">Call Me: 7999279872</a></li>
+        <li><a href="https://wa.me/917999279872" class="text-green-600 underline">Chat on WhatsApp</a></li>
+        <li><a href="mailto:123akanksha7045@sjcem.edu.in" class="text-red-600 underline">Email Me: 123akanksha7045@sjcem.edu.in</a></li>
+        <li>
+          <iframe class="w-full h-48 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0489641399744!2d72.75404757492395!3d19.697845881684366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7054264a0a4a3%3A0x740a51aa2cd2b8b1!2sPalghar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1716197348549!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </li>
+        <li class="flex space-x-4 mt-4">
+          <a href="https://github.com/123akanksha7045" class="text-gray-800">GitHub</a>
+          <a href="https://linkedin.com/in/123akanksha7045" class="text-blue-800">LinkedIn</a>
+          <a href="https://twitter.com/123akanksha7045" class="text-blue-500">Twitter</a>
+          <a href="https://instagram.com/123akanksha7045" class="text-pink-500">Instagram</a>
+        </li>
+      </ul>
+      <form action="https://formspree.io/f/yourID" method="POST" class="mt-6 space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="border p-2 w-full" required />
+        <input type="email" name="email" placeholder="Your Email" class="border p-2 w-full" required />
+        <textarea name="message" placeholder="Your Message" class="border p-2 w-full"></textarea>
+        <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-indigo-900 text-white text-center py-6 mt-12">
+    <p>&copy; 2027 Akanksha Verma. All rights reserved.</p>
+    <p>Connect with me on <a href="https://github.com/123akanksha7045" class="text-pink-200 underline">GitHub</a></p>
+  </footer>
+
+  <script>
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('achievement-list');
+        data.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = `${item.title} (${item.year})`;
+          list.appendChild(li);
+        });
+      });
+
+    function toggleMode() {
+      const html = document.documentElement;
+      const body = document.getElementById('body');
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        body.classList.remove('bg-gray-900', 'text-white');
+        body.classList.add('bg-gradient-to-br', 'from-pink-200', 'to-blue-100', 'text-gray-900');
+      } else {
+        html.classList.add('dark');
+        body.classList.remove('bg-gradient-to-br', 'from-pink-200', 'to-blue-100', 'text-gray-900');
+        body.classList.add('bg-gray-900', 'text-white');
+      }
+    }
+  </script>
+</body>
+</html>
